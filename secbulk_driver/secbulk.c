@@ -34,6 +34,8 @@ static struct usb_device_id secbulk_table[]= {
 	{ }
 };
 
+MODULE_DEVICE_TABLE(usb, secbulk_table);
+
 static struct usb_driver secbulk_driver;
 static void secbulk_disconnect(struct usb_interface *interface)
 {
